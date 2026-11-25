@@ -39,15 +39,11 @@ Compare each requirement in `<job advert>` with `<candidate CV>`. Met = 1, partl
 
 ```mermaid
 flowchart LR
-  C["<candidate>"] --> Chief
-  C --> Coach
-  Chief --> Analyst
-  Chief --> Writer
-  Chief --> Correspondent
-  Analyst --> Chief
-  Writer --> Chief
-  Correspondent --> Chief
-  Chief --> C
+  Candidate <--> Chief
+  Candidate <--> Coach
+  Chief <--> Analyst
+  Chief <--> Writer
+  Chief <--> Correspondent
 ```
 
 ## Setup
